@@ -37,6 +37,12 @@
   z-index: 50;
 }
 
+.arrowMobile {
+  cursor: pointer;
+  padding: 5px 1rem;
+}
+
+
 .titlemenuNav {
   display: flex;
   flex-direction: row;
@@ -122,9 +128,8 @@
 .ourProduct {
   padding: 1.5rem 6rem;
   margin: 3.5rem 0;
-  display: grid;
 }
-.ourProductCard {
+.our-product-card {
   display: flex;
   justify-content: center;
   gap:1rem;margin:1.5rem 1rem;
@@ -143,3 +148,7 @@
 .contentCard {
   padding: 1rem 2rem
 }
+
+
+/* Responsive */
+
