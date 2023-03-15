@@ -26,12 +26,19 @@ body {
 
 p {
   font-size: 1rem;
+  text-align: justify;
 }
 
 h1{
   font-size: 2.3rem;
   color: var(--secondaryColorText) ;
 }
+
+#titleWho {
+  margin-left: -40px;
+  display: inline-block;
+}
+
 
 @media screen and (max-width:884px) {
   .mainContent{
@@ -56,7 +63,10 @@ h1{
     width: 320px;
     margin: 0;
   }
+  #spanComponent {
+    width: 100%;font-size: 13px;line-height: 1.3;letter-spacing: 0.033em;
   
+  }
 }
 
 #paragrafMainContent {
@@ -135,6 +145,55 @@ h1{
 #card {
   width: 320px;
 }
+#twoColumn {
+  flex-direction: column;
+  align-content: center;
+}
+
+#spanComponent1,#spanComponent2 {
+  width: 100%;font-size: 13px;line-height: 1.3;letter-spacing: 0.033em;
+
+}
+#spanComponent1 {
+  padding-left: 7px;
+}
+
+#oneColumnContent{
+  border-right:none;
+  margin-left: 10px;
+  padding: 2rem;
+}
 
 
+#who-we-are {
+  padding: 3rem 1rem 6rem 1rem;
+  display: flex;
+  margin: 3rem 0;
+  background-image:url('./assests/financial-undraw.svg');
+  background-repeat: no-repeat;
+  background-size: calc(180px - 2%);
+  background-position: calc(18% - 2em) 200px;
+  height:400px ;
+}
+
+#titleWho {
+  font-size: 1.7rem;
+}
+
+#descriptionWho {
+  line-height: 26px;
+  word-spacing: 0px;
+  font-size: .8rem;
+}
+
+}
+
+@media screen and (max-width:320px) {
+  #title-menuNav{
+    order: 2;
+    justify-content:center ;
+    margin: 1.3rem 0 1.3rem 0;
+    display: flex;flex-direction: column;
+  }
+  
 }
