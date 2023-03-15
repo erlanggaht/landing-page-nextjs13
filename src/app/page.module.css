@@ -35,12 +35,25 @@
   position: sticky;
   top: 0;
   z-index: 50;
+
+}
+
+.navigasiHidden{
+  display: none;
+  transition: ease-in-out .2s;
 }
 
 .arrowMobile {
+  padding: 5px 1rem 5px 12px;
   cursor: pointer;
-  padding: 5px 1rem;
 }
+
+.arrowMobile:hover,.arrowMobile:focus,.arrowMobile:active {
+  opacity: 0.8;
+
+}
+
+
 
 
 .titlemenuNav {
@@ -57,7 +70,8 @@
 }
 
 .listMenu {
-  margin-left: 3rem;
+  margin-left: 2rem;
+  transition: ease-in-out .2s;
 }
 
 .menu {

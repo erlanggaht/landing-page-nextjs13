@@ -45,6 +45,17 @@ h1{
   #titleOurProduct {
     padding: 0 1rem;
   }
+  #our-product-card{
+  align-items:center;
+    gap:.5rem;margin:2.5rem 0rem;display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  #card {
+    width: 320px;
+    margin: 0;
+  }
   
 }
 
@@ -62,7 +73,7 @@ h1{
   #title-menuNav{
     order: 2;
     justify-content:center ;
-    margin: 1rem 0 0 0;
+    margin: 1.3rem 0 1.3rem 0;
   }
   #call-log-reg{
     order: 1;
@@ -117,12 +128,12 @@ h1{
   text-align: center;
 }
 #our-product-card{
-  flex-direction: column; align-items: center;
-  gap:1rem;margin:0rem 0rem;display: flex;
+  flex-direction: column; align-items:center;
+  gap:1rem;margin:1.5rem 0rem;display: flex;
 }
 
 #card {
-  width: 100%;
+  width: 320px;
 }
 
 
