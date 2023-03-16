@@ -13,7 +13,6 @@ export default function MainContent() {
             width: "70%",
             color: "#182957",
             fontSize: "2.5rem",
-            textAlign:"justify"
           }}
         >
           Simplifying access to specialized healthcare
@@ -53,7 +52,7 @@ export default function MainContent() {
           src={programmerUndraw}
           height="200"
           width="200"
-          style={{ width: "auto", height: "auto",filter:"drop-shadow" }}
+          style={{ width: "calc(480px - 2%)", height: "auto",filter:"drop-shadow(#ddd 0px 4px 4px)" }}
           alt={"image-undraw-programer"}
           className={style.imgcontent}
         />

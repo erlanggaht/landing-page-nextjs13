@@ -94,9 +94,9 @@
 }
 
 .btnRegister {
-  border: solid 2px #2752c4;
+  border: solid 1px #2752c4;
   text-align: center;
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: transparent;
   color: #2752c4;
   margin-right: 5px;
@@ -107,13 +107,14 @@
 }
 .btnLogin {
   text-align: center;
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: #2752c4;
   color: #ffffff;
   border-radius: 2px;
   font-style: italic;
   font-weight: 500;
   cursor: pointer;
+  border: solid 1px #2752c4;
 
 }
 .btnLogin:hover {
@@ -238,7 +239,7 @@
 }
 
 .learnMoreWho {
-  border: solid 2px #2752c4;
+  border: solid 1px #2752c4;
   text-align: center;
   padding: 0.6rem 1rem;
   background-color: transparent;
@@ -249,4 +250,22 @@
   cursor: pointer;
   font-size: .8rem;font-weight: 500;letter-spacing: 0.019em;line-height: 0.9;font-style: normal;
   margin-top: 2rem;
+}
+
+/* Try Product */
+.tryProduct{
+  padding:3rem 1rem;
+  border-top:solid 1px #EAE9EE;
+  border-bottom: solid 1px #eae9ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.titleTry {
+  font-size: 1.5rem;
+  color: #1c3169;
+  font-weight: 600;
+
 }
