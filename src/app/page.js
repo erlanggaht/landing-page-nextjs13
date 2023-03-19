@@ -1,3 +1,4 @@
+import Footer from './components/Footer/footer'
 import Headers from './components/Headers/headers'
 import OurProuduct from './components/OurProduct/our-prouduct'
 import TryProduct from './components/TryProduct/try-product'
@@ -13,6 +14,7 @@ export default function Home() {
     <TwoColumn/>
     <WhoWeAre/>
     <TryProduct/>
+    <Footer/>
     </>
   )
 }
