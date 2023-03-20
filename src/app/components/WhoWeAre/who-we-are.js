@@ -1,7 +1,11 @@
+'use client'
+import { MainContext } from "@/app/page";
+import { useContext, useRef } from "react";
 import style from "../../page.module.css";
-export default function WhoWeAre() {
+export default function WhoWeAre() { 
+  const ref = useContext(MainContext)
   return (
-    <div id="who-we-are" className={style.WhoWeAre}>
+    <div id="who-we-are" className={style.WhoWeAre} ref={ref}>
       <div className={style.leftWho}>
         <span className={style.h1} id='titleWho'>Who we are?</span>
       </div>

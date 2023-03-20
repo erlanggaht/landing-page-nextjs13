@@ -63,7 +63,13 @@ h1{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  
+  #menu {
+    position: absolute;
+    top: 84px;
+    left: 89px;
+    display: inline-block;
+  }
+
   #card {
     width: 320px;
     margin: 0;
@@ -105,6 +111,11 @@ h1{
   }
  #listMenu{
   margin-left: .2rem;
+  
+ }
+
+ #menu {
+  position: inherit;
  }
 
  #main-content {

@@ -1,10 +1,18 @@
+'use client'
 import Image from "next/image";
 import style from "../../../page.module.css";
 import programmerUndraw from "../../../assests/programmer-undraw.svg";
+import { useContext } from "react";
+import { MainContext } from "@/app/page";
 export default function MainContent() {
 
- 
+  const ref = useContext(MainContext)
 
+  function scrollDown(){
+    ref.current.scrollIntoView({
+      behavior: "smooth", inline: "center" 
+    })
+  }
   return (
     <div id="main-content" className={style.mainContent}>
       <div id="content" className={style.content}>
@@ -58,7 +66,7 @@ export default function MainContent() {
         />
       </span>
 
-      <p style={{ padding: "1rem 0" }}>
+      <p style={{ padding: "1rem 0",cursor:"pointer" }} onClick={() => scrollDown()}>
         <span style={{ color: "#2752C4", fontSize: ".9rem", width: "100vw" }}>
           {" "}
           <span style={{ transform: "rotate(90deg)", display: "inline-block" }}>
