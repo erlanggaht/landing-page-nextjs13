@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useRef, useState} from "react";
 import style from "../../../page.module.css";
 
@@ -46,7 +47,7 @@ export default function Navigasi() {
       <div id="call-log-reg" className={style.CallLogReg}>
         <span id="callUs" className={style.callUs}>Call us</span>
         <button className={style.btnRegister}>Register</button>
-        <button className={style.btnLogin}>Login</button>
+        <Link href={'/login'}><button className={style.btnLogin}>Login</button></Link>
 
       </div>
     </div>

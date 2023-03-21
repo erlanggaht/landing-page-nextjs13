@@ -93,6 +93,13 @@ h1{
 
 /* Mobile Responsive */
 @media screen and (max-width:688px) {
+  body {
+    overflow: inherit;
+  }
+
+  #table {
+    width: 100vw; padding: 16px;overflow-x: auto;
+  }
   #navigasi {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
