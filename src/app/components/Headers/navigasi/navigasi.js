@@ -32,7 +32,7 @@ export default function Navigasi() {
   return (
     <div id="navigasi" className={style.navigasi}>
       <div id="title-menuNav" className={style.titlemenuNav}>
-        <span className={style.title}>Erlanggaht.</span>
+        <Link href={'/'}><span className={style.title}>Erlanggaht.</span></Link>
         <div id="listMenu" className={style.listMenu}>
           <span className={style.arrowMobile} style={{fontSize:"1rem",display:"inline-block",fontWeight:"bolder",transform:`rotate(${navMenu ? '0deg' : '90deg'})`,textShadow:"1px 2px #ccc"}} onClick={() => MenuHandle()} > {!navMenu ? 'menu' : ""} &#10148; </span> 
         </div>

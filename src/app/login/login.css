@@ -1,0 +1,70 @@
+#LoginPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto auto;
+    padding: 5%;
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.formsdiv {
+    padding: 1rem ;
+    background-color: #fff;
+    border: solid 1px #eaeaea;
+    margin-top: 1rem;
+    border-radius: 5px;
+    width: 55%;
+    margin: 0 auto;
+}
+
+form input {
+
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        padding: 7px 20px 7px 7px;
+        border: 1px solid #b7b7b7;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        font: normal 16px/normal "Times New Roman", Times, serif;
+        color: rgba(0,142,198,1);
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        background: rgba(255,255,255,1);
+        -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.2) inset;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.2) inset;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+        max-width: 100%;
+        width: 90%;
+
+}
+
+form label {
+    margin: 0px 0 3px 0;
+    display:block;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 1.1rem;line-height: 1.5;letter-spacing: -0.019em;font-weight: 300;}
+
+.input-password,.input-username {
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+form button {
+    margin: 1.1rem;
+}
+
+.button-area {
+    text-align: right;
+}

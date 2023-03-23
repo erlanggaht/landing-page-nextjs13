@@ -9,7 +9,7 @@ table.GeneratedTable {
     border-width: 1px;
     border-color: #eee;
     border-style: solid;
-    color: #ffffff;text-align: center;
+    color: #ffffff;text-align: center;padding: 0;margin: 0;
   }
   
   table.GeneratedTable td, table.GeneratedTable th {
@@ -80,4 +80,17 @@ table.GeneratedTable {
   background-repeat: no-repeat;
   animation: loading 1s infinite;
 }
+
+@media screen and (max-width:688px) { 
+#table {
+  padding: 0 0;
+  
+}
+
+table.GeneratedTable th:nth-child(5),table.GeneratedTable td:nth-child(5) {
+  display: none;
+}
+
+}
+
 

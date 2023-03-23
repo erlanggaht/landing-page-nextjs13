@@ -256,7 +256,7 @@
 .tryProduct{
   padding:3rem 1rem;
   border-top:solid 1px #EAE9EE;
-  border-bottom: solid 1px #eae9ee;
+  border-bottom: solid 0px #eae9ee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +277,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 5rem 16rem 10rem 16rem;
   align-items: center;
-  gap:6rem
+  gap:6rem;
+  border-top: 1px #eae9ee solid;
 }
 
 
