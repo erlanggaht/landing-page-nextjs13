@@ -1,4 +1,5 @@
 'use client'
+import Head from "next/head";
 import { useState } from "react";
 import style from "../page.module.css";
 import "./login.css";
@@ -17,6 +18,8 @@ export default function Page() {
   })
 
   return (
+    <>
+        <title>Login</title>
     <div id="LoginPage" className="LoginPage">
       <h1 className={style.title} style={{ textAlign: "center",fontSize:"3rem" }}>
          Login
@@ -41,6 +44,8 @@ export default function Page() {
       </div>
       </div>
     </div>
-  );
+
+    </>
+      );
 }
 
