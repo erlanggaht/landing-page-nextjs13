@@ -4,10 +4,7 @@ import style from "../page.module.css";
 import "./login.css";
 import {handleSubmit} from "./validation";
 
-export const metadata = {
-  title: "Login",
-  description: "Halaman Login",
-};
+
 
 export default function Page() {
 
