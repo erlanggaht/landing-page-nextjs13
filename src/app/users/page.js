@@ -4,14 +4,12 @@ import LoadingSkelton from "./loadingSkelton";
 import { useGetPosts } from "./request";
 import './users.css'
 import style from '../page.module.css'
-import { useState } from "react";
 import Navigasi from "../components/Headers/navigasi/navigasi";
 import Footer from "../components/Footer/footer";
 
 export default function Page() {
   const { data, error, isLoading } = useGetPosts();
   const datas_users = data && data.users
-  var screenWidth = document.documentElement.clientWidth  
   return (
     <>
     <Navigasi/>
@@ -38,7 +36,7 @@ export default function Page() {
     return (
       <tr key={key}>
       <td>{data.id}</td>
-      <td><Image src={data.image} height="100" width='100' style={{width:screenWidth < 688 ? "60px" : '85px',height:"auto",borderRadius:"10px"}} className='ImageProfile' alt="ProfileAvatar"/></td>
+      <td><Image src={data.image} height="100" width='100' style={{width: "60px",height:"auto",borderRadius:"10px"}} className='ImageProfile' alt="ProfileAvatar"/></td>
       <td>{data.firstName} {data.lastName}</td>
       <td>{data.email}</td>
       <td>{data.domain}</td>
