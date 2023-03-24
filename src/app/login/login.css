@@ -16,13 +16,14 @@
 }
 
 .formsdiv {
-    padding: 1rem ;
+    padding: 3rem 2rem 1.5rem 2rem;
     background-color: #fff;
     border: solid 1px #eaeaea;
     margin-top: 1rem;
     border-radius: 5px;
-    width: 55%;
+    width: 65%;
     margin: 0 auto;
+    box-shadow:0px 1px 5px #dfdfdf
 }
 
 form input {
@@ -67,4 +68,19 @@ form button {
 
 .button-area {
     text-align: right;
+}
+
+
+@media screen and (max-width:688px) {
+    .formsdiv {
+        background-color: #fff;
+        border: solid 1px #eaeaea;
+        margin-top: 1rem;
+        border-radius: 5px;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow:0px 1px 5px #dfdfdf
+    }
+
+
 }

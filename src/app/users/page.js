@@ -7,9 +7,12 @@ import style from '../page.module.css'
 import Navigasi from "../components/Headers/navigasi/navigasi";
 import Footer from "../components/Footer/footer";
 
+
 export default function Page() {
   const { data, error, isLoading } = useGetPosts();
   const datas_users = data && data.users
+
+
   return (
     <>
     <Navigasi/>

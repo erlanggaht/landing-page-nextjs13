@@ -39,14 +39,9 @@
 
 }
 
-.navigasiHidden{
-  display: none;
-  transition: ease-in-out .2s;
-}
 
 .arrowMobile {
   padding: 5px .5rem 5px .5rem;
-  cursor: pointer;
   color: #2752c4;
 }
 

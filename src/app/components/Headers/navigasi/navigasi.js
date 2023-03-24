@@ -1,31 +1,11 @@
 'use client'
 import Link from "next/link";
-import { useRef, useState} from "react";
+import { useRef} from "react";
 import style from "../../../page.module.css";
 
-export default function Navigasi() {
+export default function Navigasi({localeAdmin}) {
   const ref = useRef()
-  const [navMenu,setNavMenu] = useState(false)
 
-  function MenuHandle() {
-    setNavMenu(!navMenu ? true : false)
-
-    var matchMedia = window.matchMedia('(max-width:884px)')
-
-  
-
-    function windowScroll () {
-     window.onscroll = () =>  {
-        setNavMenu(false)
-       }
-      
-    }
-    if(matchMedia.matches) {
-      !navMenu ? windowScroll() : ""       
-    } else {
-      return
-    }
-  }
 
 
 
@@ -34,10 +14,10 @@ export default function Navigasi() {
       <div id="title-menuNav" className={style.titlemenuNav}>
         <Link href={'/'}><span className={style.title}>Erlanggaht.</span></Link>
         <div id="listMenu" className={style.listMenu}>
-          <span className={style.arrowMobile} style={{fontSize:"1rem",display:"inline-block",fontWeight:"bolder",transform:`rotate(${navMenu ? '0deg' : '90deg'})`,textShadow:"1px 2px #ccc"}} onClick={() => MenuHandle()} > {!navMenu ? 'menu' : ""} &#10148; </span> 
+          <span id='arrowMenu'className={style.arrowMobile} style={{fontSize:"1rem",display:"inline-block",fontWeight:"bolder",textShadow:"1px 2px #ccc"}} > &#10148; </span> 
         </div>
-        <div id="listMenu" className={!navMenu ? style.navigasiHidden : style.listMenu} ref={ref}>
-          <div id={!navMenu ? '' : 'menu'}>
+        <div id="listMenu" className={'navigasi-menu'} ref={ref}>
+          <div id={'menu'}>
           <span className={style.menu}>Home</span>
           <span className={style.menu}>About</span>
           <span className={style.menu}>Contact</span>
@@ -46,8 +26,9 @@ export default function Navigasi() {
       </div>
       <div id="call-log-reg" className={style.CallLogReg}>
         <span id="callUs" className={style.callUs}>Call us</span>
-        <button className={style.btnRegister}>Register</button>
-        <Link href={'/login'}><button className={style.btnLogin}>Login</button></Link>
+        <button className={style.btnRegister} style={{display:!localeAdmin ? 'none' : "inherit"}}>{!localeAdmin ? '' : "Register"}</button>
+      <Link href={'/login'}><button className={style.btnLogin}>Login</button></Link>
+
 
       </div>
     </div>

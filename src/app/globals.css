@@ -45,6 +45,9 @@ h1{
 }
 
 @media screen and (max-width:884px) {
+  #arrowMenu{
+    transform: rotate(90deg);
+  }
   .mainContent{
     align-items: start;
 
@@ -64,7 +67,7 @@ h1{
   }
   #menu {
     position: absolute;
-    top: 84px;
+    top: 90px;
     left: 89px;
     display: inline-block;
   }
@@ -92,6 +95,9 @@ h1{
 
 /* Mobile Responsive */
 @media screen and (max-width:688px) {
+  #arrowMenu{
+    transform: rotate(0deg);
+  }
   body {
     overflow: inherit;
   }
@@ -240,6 +246,9 @@ h1{
 }
 
 @media screen and (max-width:320px) {
+  #arrowMenu{
+    transform: rotate(0deg);
+  }
   #title-menuNav{
     order: 2;
     justify-content:center ;
