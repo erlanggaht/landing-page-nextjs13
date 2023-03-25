@@ -2,13 +2,9 @@
 import { useState } from "react";
 import style from "../page.module.css";
 import "./login.css";
-import {handleSubmit,admin} from "./validation";
- 
-
+import {handleSubmit} from "./validation";
 
 export default function Page() {
-
-  
   const [username,setUsername] = useState()
   const [password,setPassword] = useState()
   const [validationInput,setValidationInput] = useState({
@@ -27,12 +23,12 @@ export default function Page() {
       <form>
         <div className="input-username">
         <label >Username :</label>
-        <input type="text" id="name" name="name" placeholder="Masukan username" required onChange={(e) => setUsername(e.target.value.toUpperCase())} style={{borderColor:!validationInput.success ? "red" : ""}}/>
+        <input type="text" id="name" name="name" placeholder="Masukan username" required onChange={(e) => setUsername(e.target.value.toUpperCase())} style={{borderColor:!validationInput.success ? "red" : "inherit"}}/>
         
         </div>
         <div className="input-password" >
         <label>Password :</label>
-        <input type="password" id="password" name="password" placeholder="Masukan password" required onChange={(e) => setPassword(e.target.value.toUpperCase())} style={{borderColor:!validationInput.success ? "red" : ""}} />
+        <input type="password" id="password" name="password" placeholder="Masukan password" required onChange={(e) => setPassword(e.target.value.toUpperCase())} style={{borderColor:!validationInput.success ? "red" : "imherit"}} />
         </div>
         <p className={style.p} style={{color:validationInput.success ? "blue":"red",fontStyle:"italic",textAlign:"right",padding:"6px 20px"}}>{validationInput.message}</p>
         <div className="button-area">

@@ -6,8 +6,7 @@ import { useContext } from "react";
 import { MainContext } from "@/app/page";
 export default function MainContent() {
 
-  const ref = useContext(MainContext)
-
+  const ref= useContext(MainContext)
   function scrollDown(){
     ref.current.scrollIntoView({
       behavior: "smooth", inline: "center" 

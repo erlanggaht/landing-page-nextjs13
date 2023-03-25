@@ -1,13 +1,17 @@
 'use client'
 import Link from "next/link";
+import { destroyCookie } from "nookies";
 import { useRef} from "react";
 import style from "../../../page.module.css";
+import  {redirect} from 'next/navigation'
 
-export default function Navigasi({localeAdmin}) {
+export default function Navigasi({activeLogin}) {
   const ref = useRef()
-
-
-
+  
+  function handleLogout() {
+    destroyCookie(null,'actived')
+    redirect('/login')
+  }
 
   return (
     <div id="navigasi" className={style.navigasi}>
@@ -26,8 +30,10 @@ export default function Navigasi({localeAdmin}) {
       </div>
       <div id="call-log-reg" className={style.CallLogReg}>
         <span id="callUs" className={style.callUs}>Call us</span>
-        <button className={style.btnRegister} style={{display:!localeAdmin ? 'none' : "inherit"}}>{!localeAdmin ? '' : "Register"}</button>
-      <Link href={'/login'}><button className={style.btnLogin}>Login</button></Link>
+        <button className={style.btnRegister}>Register</button>
+        {activeLogin ? <button className={style.btnLogin} onClick={() => handleLogout()}>Logout</button>:  <Link href={'/login'}><button className={style.btnLogin}>Login</button></Link>
+}
+      
 
 
       </div>

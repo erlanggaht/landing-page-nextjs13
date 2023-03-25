@@ -6,16 +6,29 @@ import './users.css'
 import style from '../page.module.css'
 import Navigasi from "../components/Headers/navigasi/navigasi";
 import Footer from "../components/Footer/footer";
-
+import { parseCookies } from "nookies";
+import { admin } from "../login/validation";
+import  {redirect} from 'next/navigation'
+import { useEffect, useState } from "react";
 
 export default function Page() {
   const { data, error, isLoading } = useGetPosts();
+  const [activeLogin,setActiveLogin] = useState(false)
   const datas_users = data && data.users
 
+  const cookies = parseCookies()
+  if (Object.keys(cookies).length===0){
+    redirect('/login')
+}
+  if(cookies.actived === admin.token) {
+    useEffect(() => setActiveLogin(true),[])
+  } 
+
+  
 
   return (
     <>
-    <Navigasi/>
+    <Navigasi activeLogin={activeLogin} />
     <div id="users">
       <div style={{margin:'4rem 0',textAlign:"center"}}>
       <h1 className={style.title}>Selamat Datang</h1>

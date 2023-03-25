@@ -14,6 +14,7 @@ export default function Home() {
   
   const ref = useRef()
   
+  
   return (
     <>
     <MainContext.Provider value={ref}>
