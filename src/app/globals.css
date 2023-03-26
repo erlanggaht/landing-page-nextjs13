@@ -23,7 +23,10 @@ body {
   color: var(--secondaryColorText);
   overflow-x: hidden;
 }
-
+a {
+  text-decoration: none;
+  color: #2752C4;
+}
 p {
   font-size: 1rem;
   text-align: justify;
@@ -42,6 +45,15 @@ h1{
 #MenuFooter span{
   font-size: 14px;
   color: #1c3169;
+}
+
+#Loading {
+  position: fixed;
+  top: 0;bottom: 0;left: 0;right: 0;
+  display: flex;justify-content: center;align-items: center;
+  background-color:#222;
+  filter: opacity(0.7);
+  z-index: 500;
 }
 
 @media screen and (max-width:884px) {

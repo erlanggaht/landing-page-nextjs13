@@ -8,9 +8,11 @@ const admin = {
   token : 'VuBsU1fAzWzhU5spo8bh ',
 }
 
-function handleSubmit (e,username,password,setValidationInput) {
-    e.preventDefault();
-    console.log(document.cookie)
+function handleSubmit (e,username,password,setValidationInput,LoadingLink) {
+    e.preventDefault();    
+    if (handleSubmit) {
+      LoadingLink(true)
+    }
     if(username === undefined || password === undefined ) {
         setValidationInput({message:'input tidak boleh kosong',success:false})
     }
@@ -25,13 +27,11 @@ function handleSubmit (e,username,password,setValidationInput) {
       setCookie(null, 'actived', admin.token, {
         maxAge: 30 * 24 * 60 * 60,
         path: '/',
-      })      
+      })  
       location.href = '/users'
     }
 
     return;
   }
-
-
 
 export {handleSubmit,admin}

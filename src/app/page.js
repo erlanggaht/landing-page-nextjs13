@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useRef, useState } from 'react'
+import { createContext, useRef } from 'react'
 import Footer from './components/Footer/footer'
 import Headers from './components/Headers/headers'
 import Navigasi from './components/Headers/navigasi/navigasi'
@@ -13,7 +13,7 @@ export const MainContext = createContext()
 export default function Home() {
   
   const ref = useRef()
-  
+
   
   return (
     <>

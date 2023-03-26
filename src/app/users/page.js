@@ -17,6 +17,7 @@ export default function Page() {
   const datas_users = data && data.users
 
   const cookies = parseCookies()
+
   if (Object.keys(cookies).length===0){
     redirect('/login')
 }
