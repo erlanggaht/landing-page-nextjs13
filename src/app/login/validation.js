@@ -8,11 +8,9 @@ const admin = {
   token : 'VuBsU1fAzWzhU5spo8bh ',
 }
 
-function handleSubmit (e,username,password,setValidationInput,LoadingLink) {
+function handleSubmit (e,username,password,setValidationInput) {
     e.preventDefault();    
-    if (handleSubmit) {
-      LoadingLink(true)
-    }
+ 
     if(username === undefined || password === undefined ) {
         setValidationInput({message:'input tidak boleh kosong',success:false})
     }
