@@ -24,12 +24,15 @@ export default function Page() {
 
   return (
     <>
+
+<title>Login</title>
+
+
      {LoadingComp && 
     <div id="Loading" className="Loading">
     <Loading/>
     </div>  }
    
-        <title>Login</title>
     <div id="LoginPage" className="LoginPage">
       <h1 className={style.title} style={{ textAlign: "center",fontSize:"3rem" }}>
          Login

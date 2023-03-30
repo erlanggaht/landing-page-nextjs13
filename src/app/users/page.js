@@ -29,6 +29,7 @@ export default function Page() {
 
   return (
     <>
+    <title>Data users</title>
     <Navigasi activeLogin={activeLogin} />
     <div id="users">
       <div style={{margin:'4rem 0',textAlign:"center"}}>
