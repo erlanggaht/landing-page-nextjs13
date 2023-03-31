@@ -40,7 +40,7 @@ export default function Navigasi({activeLogin}) {
       </div>
       <div id="call-log-reg" className={style.CallLogReg}>
         <span id="callUs" className={style.callUs} style={{display:activeLogin ? "none" : "inline" }}>Call us</span>
-        <button className={style.btnRegister} style={{display:activeLogin ? "none" : "inline" }}>Register</button>
+        <Link href={'/daftar'}><button className={style.btnRegister} style={{display:activeLogin ? "none" : "inline" }}>Register</button></Link>
         {activeLogin ? <button className={style.btnLogin} onClick={() => handleLogout()}>Logout</button>:  <Link href={'/login'}><button className={style.btnLogin} onClick={() => LoadingLink(setLoadingComp)}>Login</button></Link>
 }
       
