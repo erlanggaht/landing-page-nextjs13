@@ -1,7 +1,6 @@
 import { setCookie } from 'nookies'
 
 
-
 const admin = {
   username : "erlanggaht",
   password : "root",
